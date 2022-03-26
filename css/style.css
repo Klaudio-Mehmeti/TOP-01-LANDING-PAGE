@@ -1,0 +1,74 @@
+* { 
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    padding: 0 10px;
+}
+html, body {
+    
+    margin: 0 auto;
+    max-width: 1140px;
+	min-height: 100%;
+	background: #f1f1f1;
+	color: #000;
+    text-align: center;
+}
+	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+	
+body {
+
+	font-size: 1.4rem;
+	text-rendering: optimizeLegibility;
+}
+body:nth-child(){
+    padding: 0 100px;
+}
+header{
+    background-color: #1f2739;;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero{
+    background-color: blue;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.priceTiles{
+    background-color: salmon;
+    height: 50vh;    
+}
+
+.imgTiles{
+    display: flex;
+}
+.tiles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote{
+    background-color: seagreen;
+    height: 30vh;
+}
+.sign-up{
+    background-color: rgb(204, 201, 39);
+    height: 30vh;
+}
+
+footer{
+        background-color: #1f2739;
+        height: 10vh;
+    }
+
