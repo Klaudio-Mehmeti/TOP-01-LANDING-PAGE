@@ -2,73 +2,193 @@
     margin: 0;
     padding: 0;
 	box-sizing: border-box;
-    padding: 0 10px;
+    
 }
 html, body {
     
     margin: 0 auto;
     max-width: 1140px;
-	min-height: 100%;
-	background: #f1f1f1;
-	color: #000;
+	background: #252525;
+	color: rgb(44, 44, 44);
     text-align: center;
 }
-	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+
 	
 body {
-
-	font-size: 1.4rem;
+	font-size: 18px;
+    font-family: 'roboto','sans-serif';
 	text-rendering: optimizeLegibility;
 }
-body:nth-child(){
-    padding: 0 100px;
+section,header{
+    padding: 0 50px;
 }
-header{
-    background-color: #1f2739;;
-    height: 10vh;
+
+h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+h2{
+    font-size: 30px;
+}
+
+q{
+    font-style: italic;
+    font-size: 20px;
+    
+}
+
+h1,h2,q{
+    padding-top: 20px;
+}
+
+header, .hero ,footer, .tiles{
+    background-color: #1f2739;
+    color: #dfdfdf;
+}
+
+
+/*-----HEADER------*/
+
+header, ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+header{
+    height: 10vh;
 }
 
 ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    list-style-type: none;
 }
+
+li{
+    padding-left: 30px;
+}
+
+
+
+/*-----HERO------*/
+
 .hero{
-    background-color: blue;
-    height: 50vh;
     display: flex;
     align-items: center;
     text-align: left;
+    height: 50vh;
+    
+}
+.hero>div{
+    width: 50%;
 }
 
-.priceTiles{
-    background-color: salmon;
-    height: 50vh;    
+.img-hero{
+    transform: rotate(5deg);
 }
 
-.imgTiles{
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #f9f9f9;
+    background-color: #3882f6;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/*-----INFORMATION------*/
+
+.information{
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f9f9f9;
+    height: 50vh;
+    
+}
+
+.img-tiles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
 }
 .tiles {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 35px 5px rgba(0,0,0,0.2);
+    
 }
+ion-icon{
+    font-size: 80px;
+}
+
+/*-----QUOTE-----*/
+
 
 .quote{
-    background-color: seagreen;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    background-color: #e5e7eb;
     height: 30vh;
-}
-.sign-up{
-    background-color: rgb(204, 201, 39);
-    height: 30vh;
+    
 }
 
+
+/*-----SIGNUP------*/
+
+.sign-up{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f9f9f9;
+    height: 40vh;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;   
+    background-color: #3882f6;
+    color: #dfdfdf;
+    width: 90%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 35px 5px rgb(0 0 0 / 20%);
+    
+}
+.form div{
+    text-align: left;
+}
+
+/*-------BUTTON------*/
+
+.form div a{    
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+
+
+/*-----FOTTER------*/
+
 footer{
-        background-color: #1f2739;
-        height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-decoration: none;
+    height: 10vh;
     }
 
